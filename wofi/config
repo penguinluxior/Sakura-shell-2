@@ -1,0 +1,8 @@
+show=drun
+width=500
+height=400
+location=center
+allow_images=true
+insensitive=true
+prompt=Buscar aplicaciones...
+style=~/.config/wofi/style.css

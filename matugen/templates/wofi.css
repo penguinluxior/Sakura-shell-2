@@ -1,0 +1,80 @@
+
+@define-color bg {{colors.surface.default.hex}};
+@define-color fg {{colors.on_surface.default.hex}};
+@define-color primary {{colors.primary.default.hex}};
+@define-color secondary {{colors.secondary.default.hex}};
+@define-color outline {{colors.outline.default.hex}};
+
+@define-color placeholder_text_color {{colors.on_surface.default.hex}};
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+
+window {
+    background-color: @bg;
+    border: 2px solid @primary;
+    border-radius: 12px;
+}
+
+#outer-box {
+    background-color: @bg;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+#input {
+    background-color: alpha(@primary, 0.12);
+    color: @fg;
+    caret-color: @primary;
+    border: 1px solid @outline;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#input placeholder {
+    color: @fg;
+    opacity: 0.65;
+}
+
+#input text {
+    color: @fg;
+}
+
+#inner-box {
+    background-color: transparent;
+}
+
+#entry {
+    background-color: transparent;
+    color: @fg;
+    border-radius: 7px;
+    padding: 9px;
+}
+
+#entry:selected {
+    background-color: @primary;
+    color: @bg;
+    border: 1px solid @primary;
+}
+
+#entry:selected #text {
+    color: @bg;
+}
+
+#text {
+    color: @fg;
+    margin-left: 8px;
+}
+
+#img {
+    margin-right: 6px;
+}
+
+#scroll {
+    margin-top: 2px;
+}

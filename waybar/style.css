@@ -1,0 +1,59 @@
+@import "colors.css";
+
+* {
+    font-family: monospace;
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @bg;
+    color: @fg;
+    border-bottom: 1px solid @border;
+}
+
+/* Workspaces */
+#workspaces {
+    background: transparent;
+    padding: 0 5px;
+}
+
+#workspaces button {
+    color: @muted;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0 10px;
+    margin: 0 3px;
+
+    transition:
+        color 250ms ease,
+        border-color 250ms ease,
+        padding 250ms ease;
+}
+
+#workspaces button.active {
+    color: @primary;
+    border-bottom: 2px solid @primary;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+/* Clock */
+#clock {
+    color: @primary;
+    font-weight: bold;
+}
+
+/* Right modules */
+#pulseaudio,
+#network,
+#battery,
+#tray,
+#window {
+    padding: 0 10px;
+    margin: 0 3px;
+}
+

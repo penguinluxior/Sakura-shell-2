@@ -1,0 +1,18 @@
+[config]
+
+[templates.waybar]
+input_path = '/home/penguinluxior/.config/matugen/templates/waybar.css'
+output_path = '/home/penguinluxior/.config/waybar/colors.css'
+post_hook = 'pkill -USR2 waybar || true'
+
+[templates.wofi]
+input_path = '/home/penguinluxior/.config/matugen/templates/wofi.css'
+output_path = '/home/penguinluxior/.config/wofi/style.css'
+
+[templates.carousel]
+input_path = '/home/penguinluxior/.config/matugen/templates/carousel.conf'
+output_path = '/home/penguinluxior/.config/Sakura shell 2/colors/carousel.conf'
+
+[templates.wifi]
+input_path = '/home/penguinluxior/.config/matugen/templates/wifi.css'
+output_path = '/home/penguinluxior/.config/Sakura shell 2/colors/wifi.css'

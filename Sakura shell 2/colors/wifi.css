@@ -1,0 +1,135 @@
+@define-color bg #0e1513;
+@define-color fg #dde4e1;
+@define-color primary #82d5c8;
+@define-color secondary #b1ccc6;
+@define-color muted #bec9c6;
+@define-color outline #899390;
+@define-color error #ffb4ab;
+
+window.wifi-window {
+    background-color: transparent;
+}
+
+.wifi-card {
+    background-color: @bg;
+    border: 2px solid @primary;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.wifi-title {
+    color: @fg;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.wifi-icon {
+    color: @primary;
+    font-size: 28px;
+}
+
+.wifi-muted {
+    color: @muted;
+    font-size: 14px;
+}
+
+.wifi-divider {
+    background-color: alpha(@fg, 0.22);
+    min-height: 1px;
+}
+
+.wifi-network-row {
+    background-color: alpha(@fg, 0.08);
+    border-radius: 14px;
+    padding: 12px;
+    color: @fg;
+}
+
+.wifi-network-row:hover {
+    background-color: alpha(@primary, 0.22);
+}
+
+.wifi-network-icon {
+    color: @primary;
+    font-size: 20px;
+}
+
+.wifi-network-name {
+    color: @fg;
+    font-size: 15px;
+}
+
+.wifi-network-signal {
+    color: @muted;
+    font-size: 13px;
+}
+
+.wifi-entry {
+    color: @fg;
+    background-color: alpha(@fg, 0.08);
+    border: 1px solid alpha(@primary, 0.55);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+.wifi-entry:focus {
+    border-color: @primary;
+}
+
+.wifi-button-primary {
+    color: @bg;
+    background-color: @primary;
+    border: 1px solid @primary;
+    border-radius: 24px;
+    padding: 11px 16px;
+    font-weight: 700;
+}
+
+.wifi-button-primary:hover {
+    background-color: @secondary;
+}
+
+.wifi-button-primary:disabled {
+    opacity: 0.55;
+}
+
+.wifi-button-quiet {
+    color: @fg;
+    background-color: alpha(@fg, 0.08);
+    border: 1px solid alpha(@primary, 0.55);
+    border-radius: 20px;
+    padding: 9px 14px;
+}
+
+.wifi-button-quiet:hover {
+    background-color: alpha(@primary, 0.18);
+}
+
+.wifi-status {
+    color: @muted;
+    font-size: 14px;
+}
+
+.wifi-status-ok {
+    color: #9be69b;
+    font-size: 14px;
+}
+
+.wifi-error {
+    color: @error;
+    font-size: 14px;
+}
+
+list.wifi-list {
+    background-color: transparent;
+}
+
+list.wifi-list row {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+list.wifi-list row:selected {
+    background-color: transparent;
+}
